@@ -1,0 +1,88 @@
+.projectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  height: 100vh;
+}
+
+.projectImage img {
+  width: 800px;
+  height: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.projectTitle {
+  margin: 0;
+  font-size: 90px;
+  font-weight: 550;
+  text-align: right;
+  line-height: 65px;
+  margin-bottom: 20px;
+}
+
+.projectTagsGroup {
+  display: inline-flex;
+  gap: 7px;
+  margin: 20px 0;
+}
+
+.projectTag {
+  color: #151313;
+  border: 3px solid #151313;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 7px 22px;
+  border-radius: 25px;
+  margin: 0;
+}
+
+.projectDescription {
+  max-width: 500px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.discoverButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  justify-content: center;
+  color: #ece9e9;
+  background-color: #151313;
+  padding: 12px 28px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.discoverButton:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: #ece9e9;
+  background-color: #000000;
+}
+
+.discoverButtonText {
+  margin: 0;
+  font-size: 20px;
+}
+
+.discoverButtonIcon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1px;
+  transform: translate(0px, 1px);
+  margin-right: -1.5px;
+}
