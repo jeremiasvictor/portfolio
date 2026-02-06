@@ -1,0 +1,24 @@
+.aboutAndTecnologiesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutTitle {
+  margin: 0;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #b8b42d;
+}
+
+.aboutTextGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 460px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.aboutTextGroup p {
+  margin: 0;
+}

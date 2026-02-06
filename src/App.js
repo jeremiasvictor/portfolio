@@ -2,12 +2,13 @@ import React from "react";
 import styles from "./App.module.css";
 
 import Home from "./pages/home/Home";
-import Project from "./pages/project/Project";
+import AboutAndTecnologies from "./pages/aboutAndTecnologies/AboutAndTecnologies";
 
 function App() {
   return (
     <>
-      <Home />;{/* <Project /> */}
+      {/* <Home />; */}
+      <AboutAndTecnologies />
     </>
   );
 }
