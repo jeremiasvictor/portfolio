@@ -7,8 +7,7 @@ import Project from "./pages/project/Project";
 function App() {
   return (
     <>
-      {/* <Home />; */}
-      <Project />
+      <Home />;{/* <Project /> */}
     </>
   );
 }
