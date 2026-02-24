@@ -1,0 +1,60 @@
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLogo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #b8b42d;
+  max-width: 100px;
+}
+
+.footerContactTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footerContactItem {
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.footerFollowMeTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footerFollowMeItem p {
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.footerBackButton {
+  width: 40px;
+  height: 40px;
+  background: #f0f0dc;
+  border-radius: 10px;
+  color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footerBackButton:hover {
+  transform: scale(1.1);
+}
+
+.footerContact,
+.footerFollowMe {
+  align-self: flex-start;
+}

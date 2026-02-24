@@ -1,3 +1,9 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .headerGroup {
   display: flex;
   justify-content: space-between;

@@ -5,3 +5,11 @@ body {
   cursor: default;
   padding: 30px 120px;
 }
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

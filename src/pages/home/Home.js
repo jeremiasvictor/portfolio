@@ -3,7 +3,7 @@ import styles from "./Home.module.css";
 
 function Home() {
   return (
-    <>
+    <div className={styles.homeContainer}>
       <div className={styles.headerGroup}>
         <p className={styles.headerLogo}>jeremias marinho</p>
         <div className={styles.headerNav}>
@@ -37,7 +37,7 @@ function Home() {
           <p>entre em contato</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

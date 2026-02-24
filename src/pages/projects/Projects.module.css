@@ -41,6 +41,12 @@
   font-weight: 400;
   border-radius: 12px;
   color: #b8b42d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tagsGroup p:hover {
+  transform: scale(1.05);
 }
 
 .projectBox {
@@ -68,10 +74,22 @@
 
 .projectBoxIcon {
   margin: 0;
-  background: white;
-  width: 25px;
-  height: 25px;
+  background: #f0f0dc;
+  width: 35px;
+  height: 35px;
   border-radius: 7px;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: 1px solid transparent;
+  will-change: transform;
+}
+
+.projectBoxIcon:hover {
+  transform: scale(1.1) translateZ(0);
 }
 
 .projectBoxDescription {

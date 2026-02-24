@@ -1,4 +1,5 @@
 import styles from "./Projects.module.css";
+import { TbMaximize } from "react-icons/tb";
 
 function Projects() {
   return (
@@ -17,7 +18,9 @@ function Projects() {
         <div className={styles.projectBox}>
           <div className={styles.projectBoxHeader}>
             <h1 className={styles.projectBoxTitle}>project name</h1>
-            <div className={styles.projectBoxIcon}></div>
+            <div className={styles.projectBoxIcon}>
+              <TbMaximize strokeWidth={3} size={24} />
+            </div>
           </div>
           <p className={styles.projectBoxDescription}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
@@ -29,7 +32,9 @@ function Projects() {
         <div className={styles.projectBox}>
           <div className={styles.projectBoxHeader}>
             <h1 className={styles.projectBoxTitle}>project name</h1>
-            <div className={styles.projectBoxIcon}></div>
+            <div className={styles.projectBoxIcon}>
+              <TbMaximize strokeWidth={3} size={24} />
+            </div>
           </div>
           <p className={styles.projectBoxDescription}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
@@ -41,7 +46,9 @@ function Projects() {
         <div className={styles.projectBox}>
           <div className={styles.projectBoxHeader}>
             <h1 className={styles.projectBoxTitle}>project name</h1>
-            <div className={styles.projectBoxIcon}></div>
+            <div className={styles.projectBoxIcon}>
+              <TbMaximize strokeWidth={3} size={24} />
+            </div>
           </div>
           <p className={styles.projectBoxDescription}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
@@ -53,7 +60,9 @@ function Projects() {
         <div className={styles.projectBox}>
           <div className={styles.projectBoxHeader}>
             <h1 className={styles.projectBoxTitle}>project name</h1>
-            <div className={styles.projectBoxIcon}></div>
+            <div className={styles.projectBoxIcon}>
+              <TbMaximize strokeWidth={3} size={24} />
+            </div>
           </div>
           <p className={styles.projectBoxDescription}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
