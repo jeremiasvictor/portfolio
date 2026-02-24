@@ -27,7 +27,7 @@ function About() {
       <div className={styles.tecnologiesGroup}>
         <h1 className={styles.tecnologiesTitle}>tecnologias</h1>
         <div className={styles.tecnologiesTagsGroups}>
-          <div className={styles.graphicDesignTags}>
+          <div className={styles.TagsGroup}>
             <p>photoshop</p>
             <p>figma</p>
             <p>canva</p>
@@ -35,7 +35,7 @@ function About() {
             <p>illustrator</p>
             <p>canva</p>
           </div>
-          <div className={styles.codingTags}>
+          <div className={styles.TagsGroup}>
             <p>css</p>
             <p>javascript</p>
             <p>angular</p>
