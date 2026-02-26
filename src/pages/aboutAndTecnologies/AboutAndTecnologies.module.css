@@ -7,7 +7,7 @@
   margin: 0;
   font-size: 50px;
   margin-bottom: 30px;
-  color: #b8b42d;
+  color: var(--accent-yellow);
 }
 
 .aboutTextGroup {
@@ -27,29 +27,76 @@
   margin: 0;
   font-size: 50px;
   margin-bottom: 30px;
-  color: #b8b42d;
+  color: var(--accent-yellow);
 }
 
 .TagsGroup {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  max-width: 280px;
-  background-color: #1d1d1d;
-  padding: 16px 20px;
+  gap: 12px;
+  max-width: 360px;
+  background-color: var(--bg-card);
+  padding: 20px;
   border-radius: 20px;
   margin-bottom: 12px;
 }
 
 .TagsGroup p {
   margin: 0;
+  min-width: 80px;
+  text-align: center;
   width: fit-content;
   white-space: nowrap;
-  border: 1px solid #b8b42d;
+  border: 1px solid var(--accent-yellow);
   padding: 8px 12px;
   font-size: 16px;
   font-weight: 400;
   border-radius: 12px;
-  color: #b8b42d;
+  color: var(--accent-yellow);
+}
+
+@media (max-width: 1024px) {
+  .aboutAndTecnologiesContainer {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutTextGroup {
+    max-width: 100%;
+  }
+
+  .aboutTitle,
+  .tecnologiesTitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .aboutTitle,
+  .tecnologiesTitle {
+    font-size: 32px;
+  }
+
+  .aboutTextGroup {
+    font-size: 15px;
+  }
+
+  .TagsGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .TagsGroup p {
+    font-size: 13px;
+    min-width: 0;
+    flex: 1 1 25%;
+    text-align: center;
+  }
 }

@@ -12,6 +12,7 @@ function Footer() {
         <p className={styles.footerContactTitle}>contact</p>
         <p className={styles.footerContactItem}>99 99999-9999</p>
         <p className={styles.footerContactItem}>jeremias@email.com</p>
+        <p className={styles.footerContactItem}>jeremias@email.com</p>
       </div>
 
       <div className={styles.footerFollowMe}>

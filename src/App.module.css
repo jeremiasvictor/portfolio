@@ -1,15 +1,19 @@
-body {
-  margin: 0;
-  background-color: #171717;
-  color: #f0f0db;
-  cursor: default;
-  padding: 30px 120px;
-}
-
 .mainWrapper {
+  padding: var(--container-padding);
   display: flex;
   flex-direction: column;
-  gap: 120px;
-  max-width: 1200px;
+  gap: var(--section-gap);
+  width: 100%;
+  max-width: var(--container-width);
   margin: 0 auto;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 430px) {
+  .mainWrapper {
+    padding: var(--container-padding);
+    gap: var(--section-gap);
+    width: 100vw;
+    overflow-x: hidden;
+  }
 }

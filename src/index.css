@@ -1,5 +1,28 @@
+:root {
+  --bg-black: #171717;
+  --bg-card: #1d1d1d;
+  --text-white: #f0f0db;
+  --text-gray: #9e9e9e;
+  --accent-yellow: #b8b42d;
+
+  --section-gap: 120px;
+  --container-width: 1200px;
+
+  --container-padding: 30px 120px;
+  --section-gap: 120px;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 30px 120px;
+  cursor: default;
+  background-color: var(--bg-black);
+  color: var(--text-white);
   font-family:
     "Gabarito",
     -apple-system,
@@ -15,6 +38,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.gabarito-bold {
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 code {
@@ -22,12 +53,28 @@ code {
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* <weight>: Use a value from 400 to 900
-   <uniquifier>: Use a unique and descriptive class name */
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 25px 60px;
+  }
+}
 
-.gabarito-bold {
-  font-family: "Gabarito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+@media (max-width: 430px) {
+  * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  :root {
+    --container-padding: 40px 25px;
+    --section-gap: 60px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }

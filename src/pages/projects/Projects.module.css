@@ -1,27 +1,10 @@
-.projectsBoxesGroup {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.projectBox {
-  background: #1d1d1d;
-  width: 550px;
-  padding: 30px 40px;
-  border-radius: 40px;
-  justify-self: center;
-}
-
 .projectsTitle {
   display: flex;
   justify-content: center;
   margin: 0;
   font-size: 50px;
   margin-bottom: 30px;
-  color: #b8b42d;
+  color: var(--accent-yellow);
 }
 
 .tagsGroup {
@@ -35,12 +18,12 @@
   margin: 0;
   width: fit-content;
   white-space: nowrap;
-  border: 1px solid #b8b42d;
+  border: 1px solid var(--accent-yellow);
   padding: 8px 12px;
   font-size: 16px;
   font-weight: 400;
   border-radius: 12px;
-  color: #b8b42d;
+  color: var(--accent-yellow);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -49,18 +32,32 @@
   transform: scale(1.05);
 }
 
+.projectsBoxesGroup {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 550px));
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
 .projectBox {
-  background: #1d1d1d;
-  width: 550px;
-  padding: 20px;
+  background: var(--bg-card);
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .projectBoxHeader {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,11 +71,12 @@
 
 .projectBoxIcon {
   margin: 0;
-  background: #f0f0dc;
+  background: var(--text-white);
+  flex-shrink: 0;
   width: 35px;
   height: 35px;
   border-radius: 7px;
-  color: #1d1d1d;
+  color: var(--bg-card);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +91,8 @@
 }
 
 .projectBoxDescription {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 0 20px 0;
   font-size: 14px;
   text-align: left;
@@ -101,9 +100,64 @@
 }
 
 .projectBoxImage {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 200px;
   border-radius: 24px;
   object-fit: cover;
   display: block;
+}
+
+.projectBoxHeader,
+.projectBoxDescription,
+.projectBoxImage {
+  width: 100%;
+  max-width: 100%;
+  max-width: 490px;
+}
+
+@media (max-width: 1100px) {
+  .projectsBoxesGroup {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .projectBox {
+    width: 90%;
+    max-width: 550px;
+  }
+
+  .projectBoxImage,
+  .projectBoxDescription,
+  .projectBoxHeader {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .projectsTitle {
+    font-size: 32px;
+  }
+
+  .tagsGroup {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tagsGroup p {
+    font-size: 12px;
+  }
+
+  .projectBox {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .projectBoxTitle {
+    font-size: 24px;
+  }
+
+  .projectBoxDescription {
+    font-size: 13px;
+  }
 }
