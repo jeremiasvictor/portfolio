@@ -2,21 +2,56 @@ import styles from "./Projects.module.css";
 import { projects } from "./projectsData";
 import { TbMaximize } from "react-icons/tb";
 
+import { useState } from "react";
+
 function Projects() {
+  const [filter, setFilter] = useState("todos");
+
+  const filteredProjects = projects.filter((project) => {
+    if (filter === "todos") return true;
+    return project.category.toLowerCase() === filter.toLowerCase();
+  });
+
   return (
     <section id="projects" className={styles.projectsContainer}>
       <div className={styles.projectsHeader}>
         <h1 className={styles.projectsTitle}>projetos</h1>
         <div className={styles.tagsGroup}>
-          <p>todos</p>
-          <p>ux/ui</p>
-          <p>social media</p>
-          <p>gráficos</p>
+          <p
+            onClick={() => setFilter("todos")}
+            className={filter === "todos" ? styles.activeTag : ""}
+          >
+            todos
+          </p>
+          <p
+            onClick={() => setFilter("ux/ui")}
+            className={filter === "ux/ui" ? styles.activeTag : ""}
+          >
+            ux/ui
+          </p>
+          <p
+            onClick={() => setFilter("social-media")}
+            className={filter === "social-media" ? styles.activeTag : ""}
+          >
+            social media
+          </p>
+          <p
+            onClick={() => setFilter("graficos")}
+            className={filter === "graficos" ? styles.activeTag : ""}
+          >
+            gráficos
+          </p>
+          <p
+            onClick={() => setFilter("logos")}
+            className={filter === "logos" ? styles.activeTag : ""}
+          >
+            logos
+          </p>
         </div>
       </div>
 
       <div className={styles.projectsBoxesGroup}>
-        {projects.map((project) => (
+        {filteredProjects.map((project) => (
           <div key={project.id} className={styles.projectBox}>
             <h1 className={styles.projectBoxTitle}>{project.title}</h1>
             <p className={styles.projectBoxDescription}>

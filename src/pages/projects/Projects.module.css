@@ -1,3 +1,9 @@
+.projectsContainer {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
 .projectsTitle {
   display: flex;
   justify-content: center;
@@ -10,7 +16,7 @@
 .tagsGroup {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 40px;
 }
 
@@ -20,12 +26,17 @@
   white-space: nowrap;
   border: 1px solid var(--accent-yellow);
   padding: 8px 12px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   border-radius: 12px;
   color: var(--accent-yellow);
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.tagsGroup p.activeTag {
+  background-color: var(--accent-yellow);
+  color: var(--bg-card);
 }
 
 .tagsGroup p:hover {
@@ -34,8 +45,8 @@
 
 .projectsBoxesGroup {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 550px));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 24px;
   justify-content: center;
   width: 100%;
   max-width: var(--container-width);
@@ -45,7 +56,7 @@
 .projectBox {
   background: var(--bg-card);
   width: 100%;
-  max-width: 550px;
+  height: 100%;
   padding: 30px;
   border-radius: 40px;
   gap: 10px;
@@ -54,15 +65,20 @@
   align-items: center;
   box-sizing: border-box;
   margin: 0;
+  height: 100%;
 }
 
 .projectBoxTitle {
   margin: 0;
   font-size: 22px;
+  text-align: left;
+  width: 100%;
 }
 
 .projectBoxButton {
-  margin: 0;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--text-white);
   flex-shrink: 0;
   width: 80%;
@@ -113,12 +129,11 @@
 
 @media (max-width: 1100px) {
   .projectsBoxesGroup {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 
   .projectBox {
-    width: 90%;
     max-width: 550px;
   }
 
@@ -129,13 +144,34 @@
   }
 }
 
+@media (max-width: 768px) {
+  .tagsGroup {
+    flex-wrap: wrap;
+  }
+
+  .projectsBoxesGroup {
+    grid-template-columns: minmax(auto, 400px);
+    justify-content: center;
+  }
+
+  section {
+    scroll-margin-top: 10vh;
+  }
+}
+
 @media (max-width: 430px) {
+  .projectsBoxesGroup {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
   .projectsTitle {
     font-size: 32px;
   }
 
   .tagsGroup {
     flex-wrap: wrap;
+    max-width: 60%;
     gap: 8px;
   }
 

@@ -17,11 +17,6 @@ function AboutandTecnologies() {
             funcionam.
           </p>
           <p>
-            Para mim, design não é só "deixar bonito" e computação não é só
-            "fazer funcionar", o que me fascina é o desafio de unir as duas
-            coisas em cada projeto.
-          </p>
-          <p>
             Estou sempre em busca de aprender algo novo e de projetos que me
             tirem da zona de conforto, me ajudando a evoluir um pixel de cada
             vez.
@@ -29,7 +24,7 @@ function AboutandTecnologies() {
         </div>
       </div>
       <div className={styles.tecnologiesGroup}>
-        <h1 className={styles.tecnologiesTitle}>tecnologias e habilidades</h1>
+        <h1 className={styles.tecnologiesTitle}>tecnologias</h1>
         <div className={styles.tecnologiesTagsGroups}>
           <div className={styles.TagsGroup}>
             <p>photoshop</p>

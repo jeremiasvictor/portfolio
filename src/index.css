@@ -55,6 +55,10 @@ body {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 15vh;
+}
+
 @media (max-width: 1024px) {
   :root {
     --container-padding: 25px 60px;
