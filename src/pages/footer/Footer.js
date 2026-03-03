@@ -20,34 +20,48 @@ function Footer() {
         <p className={styles.footerContactItem}>jeremiasmarinho05@gmail.com</p>
       </div>
 
-      <div className={styles.footerFollowMe}>
-        <p className={styles.footerFollowMeTitle}>onde me encontrar</p>
-        <div className={styles.footerFollowMeItem}>
-          <div className={styles.footerFollowMeItemIcon}>
-            <RiInstagramFill />
-          </div>
-          <p>@jvictdesign</p>
-        </div>
+      <div className={styles.footerFindMe}>
+        <p className={styles.footerFindMeTitle}>onde me encontrar</p>
+        <div className={styles.footerFindMeItemsGroup}>
+          <a
+            className={styles.footerFindMeItem}
+            href="https://www.instagram.com/jvictdesign/"
+          >
+            <div className={styles.footerFindMeItemIcon}>
+              <RiInstagramFill />
+            </div>
+            <p>@jvictdesign</p>
+          </a>
 
-        <div className={styles.footerFollowMeItem}>
-          <div className={styles.footerFollowMeItemIcon}>
-            <RiBehanceFill />
-          </div>
-          <p>@jvictdesign</p>
-        </div>
+          <a
+            className={styles.footerFindMeItem}
+            href="https://www.behance.net/jvictdesign"
+          >
+            <div className={styles.footerFindMeItemIcon}>
+              <RiBehanceFill />
+            </div>
+            <p>@jvictdesign</p>
+          </a>
 
-        <div className={styles.footerFollowMeItem}>
-          <div className={styles.footerFollowMeItemIcon}>
-            <RiLinkedinBoxFill />
-          </div>
-          <p>Jeremias Marinho</p>
-        </div>
+          <a
+            className={styles.footerFindMeItem}
+            href="https://www.linkedin.com/in/jeremias-marinho-aa2b89379/"
+          >
+            <div className={styles.footerFindMeItemIcon}>
+              <RiLinkedinBoxFill />
+            </div>
+            <p>Jeremias Marinho</p>
+          </a>
 
-        <div className={styles.footerFollowMeItem}>
-          <div className={styles.footerFollowMeItemIcon}>
-            <RiGithubFill />
-          </div>
-          <p>jeremiasvictor</p>
+          <a
+            className={styles.footerFindMeItem}
+            href="https://github.com/jeremiasvictor"
+          >
+            <div className={styles.footerFindMeItemIcon}>
+              <RiGithubFill />
+            </div>
+            <p>jeremiasvictor</p>
+          </a>
         </div>
       </div>
 

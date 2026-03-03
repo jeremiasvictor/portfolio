@@ -1,14 +1,25 @@
 .footerContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footerLogo,
+.footerContact,
+.footerFindMe,
+.footerBackButton {
+  flex: 0 1 auto;
+  width: max-content;
 }
 
 .footerLogo {
   font-size: 16px;
   font-weight: 700;
   color: var(--accent-yellow);
-  max-width: 100px;
 }
 
 .footerContactTitle {
@@ -24,22 +35,45 @@
   margin-bottom: 12px;
 }
 
-.footerFollowMeTitle {
+.footerFindMeTitle {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.footerFollowMeItem {
-  display: flex;
-  gap: 8px;
+.footerFindMeItemsGroup {
+  display: grid;
+  /* Criamos 2 colunas que se ajustam estritamente ao conteúdo */
+  grid-template-columns: max-content max-content;
+  gap: 12px 24px;
 }
 
-.footerFollowMeItem p {
+.footerFindMeItem {
+  width: max-content;
+  flex-basis: calc(40% - 24px);
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.footerFindMeItemIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--text-white);
+}
+
+.footerFindMeItem p {
   margin: 0;
   font-size: 12px;
-  margin-bottom: 12px;
+  white-space: nowrap;
+  color: var(--text-white);
 }
 
 .footerBackButton {
@@ -53,6 +87,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  align-self: center;
 }
 
 .footerBackButton:hover {
@@ -60,7 +95,7 @@
 }
 
 .footerContact,
-.footerFollowMe {
+.footerFindMe {
   align-self: flex-start;
 }
 
@@ -68,100 +103,65 @@
   .footerContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px 20px;
-    flex-wrap: wrap;
+    gap: 40px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footerLogo,
+  .footerBackButton {
+    grid-column: span 2;
+  }
+
+  .footerContact,
+  .footerFindMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: max-content;
+  }
+
+  .footerFindMeItemsGroup {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .footerLogo,
+  .footerContact,
+  .footerFindMe,
+  .footerBackButton {
+    grid-column: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-  .footerLogo {
-    grid-column: span 2;
-    text-align: center;
-  }
-
-  .footerContact {
-    grid-column: 1;
-    justify-self: end;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: fit-content;
-  }
-
-  .footerFollowMe {
-    grid-column: 2;
-    justify-self: start;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: fit-content;
-  }
-
-  .footerBackButton {
-    grid-column: span 2;
-    justify-self: center;
-    margin-top: 10px;
-  }
-
-  .footerContact,
-  .footerFollowMe {
-    align-self: center;
-  }
-}
-
-@media (max-width: 430px) {
-  .footerContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 40px 20px;
-    align-items: start;
-  }
-
-  .footerLogo {
-    grid-column: span 2;
-    text-align: center;
-  }
-
-  .footerContact {
-    grid-column: 1;
-    justify-self: end;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: fit-content;
-  }
-
-  .footerFollowMe {
-    grid-column: 2;
-    justify-self: start;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: fit-content;
-  }
-
-  .footerBackButton {
-    grid-column: span 2;
-    justify-self: center;
-    margin-top: 10px;
+  .footerFindMeItemsGroup {
+    grid-template-columns: max-content;
+    justify-content: center;
+    gap: 12px;
   }
 
   .footerContactTitle,
-  .footerFollowMeTitle {
-    width: 100%;
-    font-size: 14px;
-    white-space: nowrap;
-    margin-bottom: 8px;
+  .footerFindMeTitle {
+    margin-bottom: 12px;
   }
 
-  .footerContactItem,
-  .footerFollowMeItem p {
-    font-size: 11px;
-    word-break: break-all;
+  .footerBackButton {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
   }
 }

@@ -25,23 +25,18 @@ function AboutandTecnologies() {
       </div>
       <div className={styles.tecnologiesGroup}>
         <h1 className={styles.tecnologiesTitle}>tecnologias</h1>
-        <div className={styles.tecnologiesTagsGroups}>
-          <div className={styles.TagsGroup}>
-            <p>photoshop</p>
-            <p>illustrator</p>
-            <p>figma</p>
-            <p>canva</p>
-          </div>
-          <div className={styles.TagsGroup}>
-            <p>css</p>
-            <p>html</p>
-            <p>javascript</p>
-            <p>angular</p>
-            <p>typescript</p>
-            <p>react</p>
-            <p>git</p>
-            <p>github</p>
-          </div>
+        <div className={styles.TagsGroup}>
+          <p>photoshop</p>
+          <p>illustrator</p>
+          <p>figma</p>
+          <p>canva</p>
+          <p>css</p>
+          <p>html</p>
+          <p>javascript</p>
+          <p>angular</p>
+          <p>react</p>
+          <p>git</p>
+          <p>github</p>
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 import styles from "./Projects.module.css";
 import { projects } from "./projectsData";
-import { TbMaximize } from "react-icons/tb";
 
 import { useState } from "react";
 
