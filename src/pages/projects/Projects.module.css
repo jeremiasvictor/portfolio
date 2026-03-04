@@ -100,6 +100,7 @@
 }
 
 .projectBoxDescription {
+  flex-grow: 1;
   width: 100%;
   max-width: 500px;
   font-size: 14px;
