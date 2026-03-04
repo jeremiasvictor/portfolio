@@ -41,7 +41,7 @@ export const projects = [
     description:
       "Interface de sistema empresarial com foco total em usabilidade e dados. A estrutura foi planejada para otimizar o controle de estoque e a visualização de vendas diárias.",
     image: "/gestup.png",
-    link: "https://www.behance.net/gallery/235825337/Landing-Page-Homero",
+    link: "",
     category: "ux/ui",
   },
   {
@@ -86,7 +86,7 @@ export const projects = [
     description:
       "Interface para sistema de dicionários personalizados e catalogação de palavras. O foco foi criar um fluxo intuitivo e limpo para facilitar a memorização de novos termos e significados.",
     image: "/polinomen.png",
-    link: "https://www.behance.net/gallery/235825337/Landing-Page-Homero",
+    link: "",
     category: "ux/ui",
   },
   {
@@ -95,7 +95,7 @@ export const projects = [
     description:
       "Redesign estratégico para o varejo de alimentação familiar. A proposta buscou modernizar a marca mantendo sua essência e reforçando a confiança com o consumidor final.",
     image: "/neusa.png",
-    link: "https://www.behance.net/gallery/200408695/Social-Media-Dentista",
+    link: "",
     category: "logos",
   },
   {
@@ -122,7 +122,7 @@ export const projects = [
     description:
       "Branding para profissional de estética e mentoria de cursos. O projeto une a elegância do atendimento clínico com a autoridade necessária para a frente acadêmica.",
     image: "/dary.png",
-    link: "https://www.behance.net/gallery/200408695/Social-Media-Dentista",
+    link: "",
     category: "logos",
   },
   {
@@ -149,7 +149,7 @@ export const projects = [
     description:
       "Identidade para grupo paroquial focada na conexão com os jovens. O projeto utiliza simbologias tradicionais com uma abordagem dinâmica para gerar maior engajamento.",
     image: "/artos.png",
-    link: "https://www.behance.net/gallery/200408695/Social-Media-Dentista",
+    link: "",
     category: "logos",
   },
   {
