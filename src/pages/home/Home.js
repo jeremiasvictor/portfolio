@@ -5,7 +5,7 @@ function Home() {
   return (
     <section id="home" className={styles.homeContainer}>
       <div className={styles.headerGroup}>
-        <img className={styles.headerLogo} src="./logo-minha.png" />
+        <img className={styles.headerLogo} src="./logo-minha.png" alt="" />
         <div className={styles.headerNav}>
           <a href="#aboutandtecnologies">sobre mim</a>
           <a href="#projects">projetos</a>
