@@ -10,9 +10,7 @@ import {
 function Footer() {
   return (
     <section id="footer" className={styles.footerContainer}>
-      <div className={styles.footerLogo}>
-        <p>jeremias marinho</p>
-      </div>
+      <img className={styles.footerLogo} src="./logo-minha.png" />
 
       <div className={styles.footerContact}>
         <p className={styles.footerContactTitle}>contato</p>
