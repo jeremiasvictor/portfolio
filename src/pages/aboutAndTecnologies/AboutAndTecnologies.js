@@ -5,9 +5,7 @@ import {
   DiIllustrator,
   DiCss3,
   DiHtml5,
-  DiVisualstudio,
   DiPython,
-  DiJava,
 } from "react-icons/di";
 import { SiCanva, SiJavascript, SiGit, SiFigma } from "react-icons/si";
 import { RiReactjsLine, RiAngularjsFill, RiGithubFill } from "react-icons/ri";
