@@ -1,5 +1,17 @@
 import styles from "./AboutAndTecnologies.module.css";
 
+import {
+  DiPhotoshop,
+  DiIllustrator,
+  DiCss3,
+  DiHtml5,
+  DiVisualstudio,
+  DiPython,
+  DiJava,
+} from "react-icons/di";
+import { SiCanva, SiJavascript, SiGit, SiFigma } from "react-icons/si";
+import { RiReactjsLine, RiAngularjsFill, RiGithubFill } from "react-icons/ri";
+
 function AboutandTecnologies() {
   return (
     <section
@@ -25,18 +37,19 @@ function AboutandTecnologies() {
       </div>
       <div className={styles.tecnologiesGroup}>
         <h1 className={styles.tecnologiesTitle}>tecnologias</h1>
-        <div className={styles.TagsGroup}>
-          <p>photoshop</p>
-          <p>illustrator</p>
-          <p>figma</p>
-          <p>canva</p>
-          <p>css</p>
-          <p>html</p>
-          <p>javascript</p>
-          <p>angular</p>
-          <p>react</p>
-          <p>git</p>
-          <p>github</p>
+        <div className={styles.iconsGroup}>
+          <DiPhotoshop size={50} />
+          <DiIllustrator size={50} />
+          <SiFigma size={40} />
+          <SiCanva size={40} />
+          <DiCss3 size={50} />
+          <DiHtml5 size={50} />
+          <SiJavascript size={30} />
+          <RiAngularjsFill size={40} />
+          <RiReactjsLine size={38} />
+          <SiGit size={32} />
+          <RiGithubFill size={38} />
+          <DiPython size={40} />
         </div>
       </div>
     </section>

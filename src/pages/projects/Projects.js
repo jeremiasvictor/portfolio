@@ -67,64 +67,6 @@ function Projects() {
           </div>
         ))}
       </div>
-
-      {/* <div className={styles.projectsBoxesGroup}>
-        <div className={styles.projectBox}>
-          <div className={styles.projectBoxHeader}>
-            <h1 className={styles.projectBoxTitle}>GestUp</h1>
-            <div className={styles.projectBoxIcon}>
-              <TbMaximize strokeWidth={3} size={24} />
-            </div>
-          </div>
-          <p className={styles.projectBoxDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
-            sem augue. Cras vitae mauris sapien. Praesent cursus leo sit.
-          </p>
-          <img src="/kurapika.jpg" className={styles.projectBoxImage}></img>
-        </div>
-
-        <div className={styles.projectBox}>
-          <div className={styles.projectBoxHeader}>
-            <h1 className={styles.projectBoxTitle}>project name</h1>
-            <div className={styles.projectBoxIcon}>
-              <TbMaximize strokeWidth={3} size={24} />
-            </div>
-          </div>
-          <p className={styles.projectBoxDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
-            sem augue. Cras vitae mauris sapien. Praesent cursus leo sit.
-          </p>
-          <img src="/kurapika.jpg" className={styles.projectBoxImage}></img>
-        </div>
-
-        <div className={styles.projectBox}>
-          <div className={styles.projectBoxHeader}>
-            <h1 className={styles.projectBoxTitle}>project name</h1>
-            <div className={styles.projectBoxIcon}>
-              <TbMaximize strokeWidth={3} size={24} />
-            </div>
-          </div>
-          <p className={styles.projectBoxDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
-            sem augue. Cras vitae mauris sapien. Praesent cursus leo sit.
-          </p>
-          <img src="/kurapika.jpg" className={styles.projectBoxImage}></img>
-        </div>
-
-        <div className={styles.projectBox}>
-          <div className={styles.projectBoxHeader}>
-            <h1 className={styles.projectBoxTitle}>project name</h1>
-            <div className={styles.projectBoxIcon}>
-              <TbMaximize strokeWidth={3} size={24} />
-            </div>
-          </div>
-          <p className={styles.projectBoxDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
-            sem augue. Cras vitae mauris sapien. Praesent cursus leo sit.
-          </p>
-          <img src="/kurapika.jpg" className={styles.projectBoxImage}></img>
-        </div>
-      </div> */}
     </section>
   );
 }
