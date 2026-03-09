@@ -9,11 +9,11 @@
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 430px) {
+@media (max-width: 430px) {
   .mainWrapper {
     padding: var(--container-padding);
     gap: var(--section-gap);
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
   }
 }

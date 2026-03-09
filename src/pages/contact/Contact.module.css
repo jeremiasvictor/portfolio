@@ -93,13 +93,9 @@
   .contactTitle {
     font-size: 44px;
   }
-
-  .footerNav {
-    gap: 24px;
-  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .contactContainer {
     padding: 40px 20px;
   }
@@ -115,16 +111,6 @@
 
   .contactHeader {
     margin-bottom: 32px;
-  }
-
-  .footerNav {
-    gap: 16px;
-    margin-bottom: 32px;
-    font-size: 12px;
-  }
-
-  .navLink {
-    font-size: 12px;
   }
 
   .footerBottom {
@@ -160,6 +146,16 @@
     font-size: 28px;
   }
 
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .socialIcons {
+    order: 1;
+  }
+
   .socialLink {
     width: 36px;
     height: 36px;
@@ -169,5 +165,6 @@
   .backButton {
     width: 36px;
     height: 36px;
+    order: 2;
   }
 }

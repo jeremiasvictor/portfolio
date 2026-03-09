@@ -1,4 +1,4 @@
-.aboutAndTecnologiesContainer {
+.aboutAndTechnologiesContainer {
   display: flex;
   justify-content: space-between;
   gap: 80px;
@@ -12,14 +12,14 @@
   max-width: 550px;
 }
 
-.tecnologiesGroup {
+.technologiesGroup {
   flex: 1;
   max-width: 390px;
   width: 100%;
 }
 
 .aboutTitle,
-.tecnologiesTitle {
+.technologiesTitle {
   margin: 0;
   font-size: 50px;
   margin-bottom: 30px;
@@ -69,27 +69,21 @@
   color: var(--accent-yellow);
 }
 
-@media (max-width: 1220px) {
-  .tecnologiesIconsGroups {
-    align-items: center;
-  }
-}
-
-@media (max-width: 900px) {
-  .aboutAndTecnologiesContainer {
+@media (max-width: 1024px) {
+  .aboutAndTechnologiesContainer {
     flex-direction: column;
     align-items: center;
     gap: 50px;
   }
 
   .aboutGroup,
-  .tecnologiesGroup {
+  .technologiesGroup {
     max-width: 100%;
     width: 100%;
   }
 
   .aboutTitle,
-  .tecnologiesTitle {
+  .technologiesTitle {
     text-align: center;
     width: 100%;
   }
@@ -99,14 +93,14 @@
     text-align: justify;
   }
 
-  .tecnologiesGroup {
+  .technologiesGroup {
     max-width: 390px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .aboutTitle,
-  .tecnologiesTitle {
+  .technologiesTitle {
     font-size: 36px;
   }
 
@@ -118,8 +112,24 @@
     gap: 10px;
     padding: 20px 15px;
   }
+}
 
-  .iconsGroup p {
-    border-radius: 10px;
+@media (max-width: 480px) {
+  .aboutAndTechnologiesContainer {
+    gap: 30px;
+  }
+
+  .aboutTitle,
+  .technologiesTitle {
+    font-size: 28px;
+  }
+
+  .aboutTextGroup {
+    font-size: 16px;
+  }
+
+  .iconsGroup {
+    gap: 8px;
+    padding: 16px 12px;
   }
 }

@@ -1,6 +1,5 @@
 import styles from "./Projects.module.css";
 import { projects } from "./projectsData";
-
 import { useState } from "react";
 
 function Projects() {
@@ -11,48 +10,35 @@ function Projects() {
     return project.category.toLowerCase() === filter.toLowerCase();
   });
 
+  const categories = ["todos", "ux/ui", "social-media", "graficos", "logos"];
+
   return (
     <section id="projects" className={styles.projectsContainer}>
       <div className={styles.projectsHeader}>
         <h1 className={styles.projectsTitle}>projetos</h1>
         <div className={styles.tagsGroup}>
-          <p
-            onClick={() => setFilter("todos")}
-            className={filter === "todos" ? styles.activeTag : ""}
-          >
-            todos
-          </p>
-          <p
-            onClick={() => setFilter("ux/ui")}
-            className={filter === "ux/ui" ? styles.activeTag : ""}
-          >
-            ux/ui
-          </p>
-          <p
-            onClick={() => setFilter("social-media")}
-            className={filter === "social-media" ? styles.activeTag : ""}
-          >
-            social media
-          </p>
-          <p
-            onClick={() => setFilter("graficos")}
-            className={filter === "graficos" ? styles.activeTag : ""}
-          >
-            gráficos
-          </p>
-          <p
-            onClick={() => setFilter("logos")}
-            className={filter === "logos" ? styles.activeTag : ""}
-          >
-            logos
-          </p>
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setFilter(category)}
+              className={`${styles.tag} ${
+                filter === category ? styles.activeTag : ""
+              }`}
+            >
+              {category === "ux/ui"
+                ? "ux/ui"
+                : category === "social-media"
+                  ? "social media"
+                  : category}
+            </button>
+          ))}
         </div>
       </div>
 
       <div className={styles.projectsBoxesGroup}>
         {filteredProjects.map((project) => (
           <div key={project.id} className={styles.projectBox}>
-            <h1 className={styles.projectBoxTitle}>{project.title}</h1>
+            <h2 className={styles.projectBoxTitle}>{project.title}</h2>
             <p className={styles.projectBoxDescription}>
               {project.description}
             </p>

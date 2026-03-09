@@ -6,11 +6,11 @@ function Home() {
     <section id="home" className={styles.homeContainer}>
       <div className={styles.header}>
         <img className={styles.headerLogo} src="./logo-minha.png" alt="logo" />
-        <div className={styles.headerNav}>
+        <nav className={styles.headerNav}>
           <a href="#aboutandtecnologies">sobre mim</a>
           <a href="#projects">projetos</a>
           <a href="#contact">contato</a>
-        </div>
+        </nav>
       </div>
 
       <div className={styles.contentWrapper}>
@@ -26,13 +26,13 @@ function Home() {
         venho aprendendo.
       </p>
 
-      <div className={styles.ButtonsGroup}>
-        <div className={styles.worksButton}>
-          <a href="#projects">veja meus trabalhos</a>
-        </div>
-        <div className={styles.contactButton}>
-          <a href="#contact">entre em contato</a>
-        </div>
+      <div className={styles.buttonsGroup}>
+        <a href="#projects" className={styles.primaryButton}>
+          veja meus trabalhos
+        </a>
+        <a href="#contact" className={styles.secondaryButton}>
+          entre em contato
+        </a>
       </div>
     </section>
   );

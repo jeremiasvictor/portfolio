@@ -1,4 +1,4 @@
-import styles from "./AboutAndTecnologies.module.css";
+import styles from "./AboutAndTechnologies.module.css";
 
 import {
   DiPhotoshop,
@@ -10,11 +10,11 @@ import {
 import { SiCanva, SiJavascript, SiGit, SiFigma } from "react-icons/si";
 import { RiReactjsLine, RiAngularjsFill, RiGithubFill } from "react-icons/ri";
 
-function AboutandTecnologies() {
+function AboutAndTechnologies() {
   return (
     <section
       id="aboutandtecnologies"
-      className={styles.aboutAndTecnologiesContainer}
+      className={styles.aboutAndTechnologiesContainer}
     >
       <div className={styles.aboutGroup}>
         <h1 className={styles.aboutTitle}>sobre mim</h1>
@@ -33,8 +33,8 @@ function AboutandTecnologies() {
           </p>
         </div>
       </div>
-      <div className={styles.tecnologiesGroup}>
-        <h1 className={styles.tecnologiesTitle}>tecnologias</h1>
+      <div className={styles.technologiesGroup}>
+        <h1 className={styles.technologiesTitle}>tecnologias</h1>
         <div className={styles.iconsGroup}>
           <DiPhotoshop size={50} />
           <DiIllustrator size={50} />
@@ -54,4 +54,4 @@ function AboutandTecnologies() {
   );
 }
 
-export default AboutandTecnologies;
+export default AboutAndTechnologies;

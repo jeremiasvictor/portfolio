@@ -12,14 +12,7 @@
 
 .headerLogo {
   width: 120px;
-  display: flex;
-  align-items: center;
-}
-
-.headerLogo img {
-  width: 100% !important;
   height: auto;
-  display: block;
 }
 
 .headerNav {
@@ -78,20 +71,20 @@
   color: var(--text-gray);
 }
 
-.ButtonsGroup {
+.buttonsGroup {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-bottom: 40px;
 }
-.worksButton,
-.contactButton {
+
+.primaryButton,
+.secondaryButton {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: auto;
   padding: 0 30px;
   border-radius: 18px;
   cursor: pointer;
@@ -99,35 +92,27 @@
   font-weight: 700;
   white-space: nowrap;
   min-width: 160px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.worksButton a {
-  text-decoration: none;
+.primaryButton {
+  background-color: var(--accent-yellow);
+  border: 3px solid var(--accent-yellow);
   color: var(--bg-black);
 }
 
-.contactButton a {
-  text-decoration: none;
-  color: var(--accent-yellow);
-}
-
-.worksButton {
-  background-color: var(--accent-yellow);
-  border: 3px solid var(--accent-yellow);
-  transition: all 0.3s ease;
-}
-
-.worksButton:hover {
+.primaryButton:hover {
   transform: scale(1.05);
 }
 
-.contactButton {
+.secondaryButton {
   background-color: transparent;
   border: 3px solid var(--accent-yellow);
-  transition: all 0.3s ease;
+  color: var(--accent-yellow);
 }
 
-.contactButton:hover {
+.secondaryButton:hover {
   transform: scale(1.05);
 }
 
@@ -205,14 +190,14 @@
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
   .homeContainer {
     padding: 16px;
   }
 
   .header {
     gap: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .headerNav {

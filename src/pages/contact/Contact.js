@@ -6,6 +6,7 @@ import {
   RiLinkedinBoxFill,
   RiBehanceFill,
 } from "react-icons/ri";
+
 function Contact() {
   return (
     <section id="contact" className={styles.contactContainer}>
@@ -58,4 +59,5 @@ function Contact() {
     </section>
   );
 }
+
 export default Contact;
