@@ -1,0 +1,173 @@
+.contactContainer {
+  width: 100%;
+  background: var(--bg-black);
+  padding: 80px 40px;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.contactHeader {
+  margin-bottom: 48px;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contactTitle {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 16px;
+}
+
+.contactSubtitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-gray);
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialLink {
+  width: 48px;
+  height: 48px;
+  background: var(--text-white);
+  border-radius: 50%;
+  color: var(--bg-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  transform: translateY(-4px);
+}
+
+.backButton {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 2px solid var(--text-white);
+  border-radius: 50%;
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: var(--text-white);
+  color: var(--bg-black);
+  transform: translateY(-4px);
+}
+
+@media (max-width: 1024px) {
+  .contactContainer {
+    padding: 60px 30px;
+  }
+
+  .contactTitle {
+    font-size: 44px;
+  }
+
+  .footerNav {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactContainer {
+    padding: 40px 20px;
+  }
+
+  .contactTitle {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .contactSubtitle {
+    font-size: 16px;
+  }
+
+  .contactHeader {
+    margin-bottom: 32px;
+  }
+
+  .footerNav {
+    gap: 16px;
+    margin-bottom: 32px;
+    font-size: 12px;
+  }
+
+  .navLink {
+    font-size: 12px;
+  }
+
+  .footerBottom {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .socialIcons {
+    gap: 12px;
+    order: 2;
+    width: 100%;
+  }
+
+  .socialLink {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .backButton {
+    width: 40px;
+    height: 40px;
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactContainer {
+    padding: 30px 16px;
+  }
+
+  .contactTitle {
+    font-size: 28px;
+  }
+
+  .socialLink {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .backButton {
+    width: 36px;
+    height: 36px;
+  }
+}
