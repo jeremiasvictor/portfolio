@@ -161,10 +161,14 @@
     min-height: auto;
   }
 
+  .contentWrapper {
+    margin-top: 60px;
+  }
+
   .header {
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 
   .headerNav {
@@ -217,11 +221,11 @@
   }
 
   .title {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .titleTag {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .description {

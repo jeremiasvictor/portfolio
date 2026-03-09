@@ -173,16 +173,16 @@
   .tagsGroup {
     flex-wrap: wrap;
     max-width: 60%;
-    gap: 8px;
+    gap: 4px;
   }
 
   .tagsGroup p {
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .projectBox {
     padding: 20px;
-    border-radius: 16px;
+    border-radius: 14px;
   }
 
   .projectBoxTitle {
