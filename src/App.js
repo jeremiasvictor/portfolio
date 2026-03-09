@@ -4,7 +4,7 @@ import styles from "./App.module.css";
 import Home from "./pages/home/Home";
 import AboutAndTecnologies from "./pages/aboutAndTecnologies/AboutAndTecnologies";
 import Projects from "./pages/projects/Projects";
-import Footer from "./pages/footer/Footer";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Home />
       <AboutAndTecnologies />
       <Projects />
-      <Footer />
+      <Contact />
     </div>
   );
 }

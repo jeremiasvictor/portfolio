@@ -4,36 +4,34 @@ import styles from "./Home.module.css";
 function Home() {
   return (
     <section id="home" className={styles.homeContainer}>
-      <div className={styles.headerGroup}>
-        <img className={styles.headerLogo} src="./logo-minha.png" alt="" />
+      <div className={styles.header}>
+        <img className={styles.headerLogo} src="./logo-minha.png" alt="logo" />
         <div className={styles.headerNav}>
           <a href="#aboutandtecnologies">sobre mim</a>
           <a href="#projects">projetos</a>
-          <a href="#footer">contato</a>
+          <a href="#contact">contato</a>
         </div>
       </div>
 
-      <div className={styles.titleContainer}>
+      <div className={styles.contentWrapper}>
         <div className={styles.titleGroup}>
-          {/* <p className={styles.titleTag}>meu</p> */}
-          <h1 className={styles.title}>portfólio.</h1>
+          <p className={styles.titleTag}>design gráfico • web design</p>
+          <h1 className={styles.title}>portfólio</h1>
         </div>
       </div>
 
-      <div className={styles.description}>
-        <p>
-          Designer gráfico em formação e entusiasta de UI/UX. Este é o meu
-          espaço para documentar minha evolução, meus projetos de estudo e tudo
-          o que venho aprendendo.
-        </p>
-      </div>
+      <p className={styles.description}>
+        Designer gráfico em formação e entusiasta de UI/UX. Este é o meu espaço
+        para documentar minha evolução, meus projetos de estudo e tudo o que
+        venho aprendendo.
+      </p>
 
-      <div className={styles.homeButtonsGroup}>
+      <div className={styles.ButtonsGroup}>
         <div className={styles.worksButton}>
           <a href="#projects">veja meus trabalhos</a>
         </div>
         <div className={styles.contactButton}>
-          <a href="#footer">entre em contato</a>
+          <a href="#contact">entre em contato</a>
         </div>
       </div>
     </section>
